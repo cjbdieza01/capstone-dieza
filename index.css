@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.img {
+    max-height: 30px;
+}
+
+.divider {
+    display: block;
+    height: 2px;
+    background-color: #ccc;
+    margin: 10px 0;
+}
+
+nav {
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+}
+
+.jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    background-image: url(images/backgroundPicture.jpg);
+    opacity: rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+    opacity: rgba(0, 0, 0, 0.2);
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+}
+
+.profilePicture {
+    animation-duration: 4s;
+}
+
+.jumbotron-heading {
+    font-weight: 300;
+}
+
+.jumbotron p {
+    color: white;
+    text-shadow: 0 0 10px rgba(0 0 0.5);
+}
+
+.jumbotron .container {
+    max-width: 40rem;
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+    color: white;
+}
+
+.jumbotron .container .profilePicture {
+    width: 250px;
+    height: 250px;
+}
+
+.jumbotron .container .jumbotron-heading {
+    font-weight: 800;
+}
+
+
+/*styling for galery*/
+
+body {
+    background: rgb(186, 186, 186);
+    background: linear-gradient(90deg, rgba(186, 186, 186, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(209, 209, 209, 1) 75%, rgba(186, 186, 186, 1) 100%);
+}
+
+figcaption {
+    font-size: 2em;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-size: contain;
+    }
+}
+
+.img-container {
+    position: relative;
+    overflow: hidden;
+    animation-name: fadeInDown;
+    animation-duration: 2s;
+}
+
+.img-container:hover .img-overlay {
+    opacity: 1;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-overlay p {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/*styling for myProfile*/
+
+#profilePicture {
+    animation-name: fadeInDown;
+    animation-duration: 3s;
+}
