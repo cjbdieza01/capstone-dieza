@@ -5,6 +5,10 @@
     font-family: 'Bruno Ace SC', cursive;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
@@ -15,6 +19,24 @@
         transform: none;
     }
 }
+
+body {
+    background: rgb(110, 110, 110);
+    background: linear-gradient(90deg, rgba(110, 110, 110, 1) 0%, rgba(120, 120, 120, 1) 2%, rgba(130, 130, 130, 1) 4%, rgba(140, 140, 140, 1) 6%, rgba(150, 150, 150, 1) 08%, rgba(160, 160, 160, 1) 10%, rgba(170, 170, 170, 1) 12%, rgba(180, 180, 180, 1) 14%, rgba(190, 190, 190, 1) 16%, rgba(200, 200, 200, 1) 18%, rgba(205, 205, 205, 1) 20%, rgba(210, 210, 210, 1) 22%, rgba(215, 215, 215, 1) 24%, rgba(220, 220, 220, 1) 26%, rgba(225, 225, 225, 1) 28%, rgba(230, 230, 230, 1) 30%, rgba(235, 235, 235, 1) 32%, rgba(240, 240, 240, 1) 34%, rgba(245, 245, 245, 1) 36%, rgba(250, 250, 250, 1) 38%, rgba(255, 255, 255, 1) 40%, rgba(255, 255, 255, 1) 60%, rgba(250, 250, 250, 1) 62%, rgba(245, 245, 245, 1) 64%, rgba(240, 240, 240, 1) 66%, rgba(235, 235, 235, 1) 68%, rgba(230, 230, 230, 1) 70%, rgba(225, 225, 225, 1) 72%, rgba(220, 220, 220, 1) 74%, rgba(215, 215, 215, 1) 76%, rgba(210, 210, 210, 1) 78%, rgba(205, 205, 205, 1) 80%, rgba(200, 200, 200, 1) 82%, rgba(190, 190, 190, 1) 84%, rgba(180, 180, 180, 1) 86%, rgba(170, 170, 170, 1) 88%, rgba(160, 160, 160, 1) 90%, rgba(150, 150, 150, 1) 92%, rgba(140, 140, 140, 1) 94%, rgba(130, 130, 130, 1) 96%, rgba(120, 120, 120, 1) 98%, rgba(110, 110, 110, 1) 100%);
+}
+
+
+/*{
+    background: rgb(0, 0, 0);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 20, 0, 1) 5%, rgba(0, 45, 0, 1) 10%, rgba(5, 100, 0, 1) 17%, rgba(0, 150, 0, 1) 25%, rgba(0, 180, 0, 1) 33%, rgba(0, 230, 0, 1) 40%, rgba(0, 255, 0, 1) 45%, rgba(0, 255, 0, 1) 55%, rgba(0, 230, 0, 1) 60%, rgba(0, 180, 0, 1) 67%, rgba(0, 150, 0, 1) 75%, rgba(0, 100, 0, 1) 83%, rgba(0, 45, 0, 1) 90%, rgba(0, 25, 0, 1) 95%, rgba(0, 0, 0, 1) 100%, rgba(4, 203, 35, 1) 255%);
+}
+
+
+body {
+    background: rgb(186, 186, 186);
+    background: linear-gradient(90deg, rgba(186, 186, 186, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(209, 209, 209, 1) 75%, rgba(186, 186, 186, 1) 100%);
+}
+*/
 
 .img {
     max-height: 30px;
@@ -55,6 +77,17 @@ nav {
     font-weight: 300;
 }
 
+.jumbotron .container p {
+    font-size: 2rem;
+    animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0.5;
+    }
+}
+
 .jumbotron p {
     color: white;
     text-shadow: 0 0 10px rgba(0 0 0.5);
@@ -76,13 +109,20 @@ nav {
     font-weight: 800;
 }
 
-
-/*styling for galery*/
-
-body {
-    background: rgb(186, 186, 186);
-    background: linear-gradient(90deg, rgba(186, 186, 186, 1) 25%, rgba(255, 255, 255, 1) 50%, rgba(209, 209, 209, 1) 75%, rgba(186, 186, 186, 1) 100%);
+.d0r15fd {
+    font-size: 2em;
 }
+
+.d0r15fd1 {
+    font-size: 20px;
+}
+
+#Section1 {
+    font-size: 2rem;
+}
+
+#
+/*styling for galery*/
 
 figcaption {
     font-size: 2em;
@@ -132,3 +172,43 @@ figcaption {
     animation-name: fadeInDown;
     animation-duration: 3s;
 }
+
+
+/* Styling for Pricing */
+
+.navbar {
+    position: sticky;
+}
+
+
+/* flip card
+
+.flip-card {
+    perspective: 1000px;
+    /* Set the perspective 
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+    */
