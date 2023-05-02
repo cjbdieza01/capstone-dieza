@@ -180,6 +180,18 @@ figcaption {
     position: sticky;
 }
 
+#pfooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#cfooter {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 
 /* flip card
 
